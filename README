@@ -1,0 +1,3 @@
+Cut a PDF into square tiles
+
+pdftiler --dpi 300 --cols 2 --rows 4 FILE.PDF
