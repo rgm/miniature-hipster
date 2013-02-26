@@ -237,6 +237,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pdftiler/pdftiler-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"TEST_HOST[sdk=*]" = "";
 			};
 			name = Debug;
 		};
@@ -317,6 +318,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pdftiler/pdftiler-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"TEST_HOST[sdk=*]" = pdftiler;
 			};
 			name = Test;
 		};
