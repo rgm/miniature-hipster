@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Lagrangian/Lagrangian.h>
+
+@l3_suite("main");
+@l3_test("dummy test should fail") {
+  l3_assert(true, l3_equals(false));
+}
 
 int main(int argc, const char * argv[])
 {
 
   @autoreleasepool {
       
-      // insert code here...
       NSLog(@"Hello, World!");
       
   }
