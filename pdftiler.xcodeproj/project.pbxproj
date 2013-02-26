@@ -32,7 +32,6 @@
 		E1B90CC516DC2D7C000CFDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1B90CC816DC2D7C000CFDB5 /* pdftiler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pdftiler-Prefix.pch"; sourceTree = "<group>"; };
 		E1B90CC916DC2D7C000CFDB5 /* pdftiler.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pdftiler.1; sourceTree = "<group>"; };
-		E1B90CD116DC2F1C000CFDB5 /* SAU A102.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SAU A102.pdf"; sourceTree = "<group>"; };
 		E1EBC85B16DC6DDC00FF8BD3 /* Lagrangian.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lagrangian.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EBC86216DC712400FF8BD3 /* Lagrangian.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lagrangian.framework; path = vendor/Lagrangian.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +52,6 @@
 		E1B90CB616DC2D7C000CFDB5 = {
 			isa = PBXGroup;
 			children = (
-				E1B90CD216DC2F22000CFDB5 /* test */,
 				E1B90CC416DC2D7C000CFDB5 /* pdftiler */,
 				E1B90CC116DC2D7C000CFDB5 /* Frameworks */,
 				E1B90CC016DC2D7C000CFDB5 /* Products */,
@@ -94,23 +92,6 @@
 				E1B90CC816DC2D7C000CFDB5 /* pdftiler-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E1B90CD016DC2F1C000CFDB5 /* fixtures */ = {
-			isa = PBXGroup;
-			children = (
-				E1B90CD116DC2F1C000CFDB5 /* SAU A102.pdf */,
-			);
-			name = fixtures;
-			path = pdftiler/fixtures;
-			sourceTree = "<group>";
-		};
-		E1B90CD216DC2F22000CFDB5 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				E1B90CD016DC2F1C000CFDB5 /* fixtures */,
-			);
-			name = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

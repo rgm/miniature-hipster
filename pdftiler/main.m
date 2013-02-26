@@ -11,7 +11,7 @@
 
 @l3_suite("main");
 @l3_test("dummy test should fail") {
-  l3_assert(true, l3_equals(false));
+  l3_assert(YES, l3_equals(NO));
 }
 
 int main(int argc, const char * argv[])
