@@ -6,10 +6,12 @@
 //  Copyright (c) 2013 Ryan McCuaig. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 #import <Lagrangian/Lagrangian.h>
-
 #include <getopt.h>
+
+#import "RGMTileCutter.h"
+#import "RGMImageTile.h"
 
 @l3_suite("main");
 @l3_test("dummy test should fail") {
@@ -57,7 +59,16 @@ int main(int argc, const char * argv[])
   @autoreleasepool {
     
     NSLog(@"dpi %ld rows %ld cols %ld filename %s", dpi, rows, cols, filename);
-    
+    NSURL *fileUrl = [NSURL URLWithString:[NSString stringWithCString:filename encoding:NSUTF8StringEncoding]];
+    NSImage *image = [[NSImage alloc] initWithContentsOfURL:fileUrl];
+    RGMTileCutter *cutter = [RGMTileCutter new];
+    cutter.image = image;
+    cutter.dpi = dpi;
+    cutter.rows = rows;
+    cutter.cols = cols;
+    for (RGMImageTile *tile in [cutter tiles]) {
+      [tile writeToDirectory:nil];
+    }
   }
   return 0;
 }

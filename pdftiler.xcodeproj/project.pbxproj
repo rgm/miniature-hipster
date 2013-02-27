@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E1B90CC316DC2D7C000CFDB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B90CC216DC2D7C000CFDB5 /* Foundation.framework */; };
 		E1B90CC616DC2D7C000CFDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B90CC516DC2D7C000CFDB5 /* main.m */; };
 		E1B90CCA16DC2D7C000CFDB5 /* pdftiler.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1B90CC916DC2D7C000CFDB5 /* pdftiler.1 */; };
 		E1EBC86316DC712400FF8BD3 /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EBC86216DC712400FF8BD3 /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E1EBC86616DE4C1200FF8BD3 /* RGMTileCutter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EBC86516DE4C1200FF8BD3 /* RGMTileCutter.m */; };
+		E1EBC86916DE4CBC00FF8BD3 /* RGMImageTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EBC86816DE4CBC00FF8BD3 /* RGMImageTile.m */; };
+		E1EBC86B16DE4D5C00FF8BD3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EBC86A16DE4D5C00FF8BD3 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +30,16 @@
 
 /* Begin PBXFileReference section */
 		E1B90CBF16DC2D7C000CFDB5 /* pdftiler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pdftiler; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1B90CC216DC2D7C000CFDB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1B90CC516DC2D7C000CFDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1B90CC816DC2D7C000CFDB5 /* pdftiler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pdftiler-Prefix.pch"; sourceTree = "<group>"; };
 		E1B90CC916DC2D7C000CFDB5 /* pdftiler.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pdftiler.1; sourceTree = "<group>"; };
 		E1EBC85B16DC6DDC00FF8BD3 /* Lagrangian.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lagrangian.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EBC86216DC712400FF8BD3 /* Lagrangian.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lagrangian.framework; path = vendor/Lagrangian.framework; sourceTree = "<group>"; };
+		E1EBC86416DE4C1200FF8BD3 /* RGMTileCutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMTileCutter.h; sourceTree = "<group>"; };
+		E1EBC86516DE4C1200FF8BD3 /* RGMTileCutter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMTileCutter.m; sourceTree = "<group>"; };
+		E1EBC86716DE4CBC00FF8BD3 /* RGMImageTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMImageTile.h; sourceTree = "<group>"; };
+		E1EBC86816DE4CBC00FF8BD3 /* RGMImageTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMImageTile.m; sourceTree = "<group>"; };
+		E1EBC86A16DE4D5C00FF8BD3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B90CC316DC2D7C000CFDB5 /* Foundation.framework in Frameworks */,
+				E1EBC86B16DE4D5C00FF8BD3 /* Cocoa.framework in Frameworks */,
 				E1EBC86316DC712400FF8BD3 /* Lagrangian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,8 +76,8 @@
 		E1B90CC116DC2D7C000CFDB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1EBC86A16DE4D5C00FF8BD3 /* Cocoa.framework */,
 				E1EBC86216DC712400FF8BD3 /* Lagrangian.framework */,
-				E1B90CC216DC2D7C000CFDB5 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,6 +88,10 @@
 				E1B90CC516DC2D7C000CFDB5 /* main.m */,
 				E1B90CC916DC2D7C000CFDB5 /* pdftiler.1 */,
 				E1B90CC716DC2D7C000CFDB5 /* Supporting Files */,
+				E1EBC86416DE4C1200FF8BD3 /* RGMTileCutter.h */,
+				E1EBC86516DE4C1200FF8BD3 /* RGMTileCutter.m */,
+				E1EBC86716DE4CBC00FF8BD3 /* RGMImageTile.h */,
+				E1EBC86816DE4CBC00FF8BD3 /* RGMImageTile.m */,
 			);
 			path = pdftiler;
 			sourceTree = "<group>";
@@ -161,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B90CC616DC2D7C000CFDB5 /* main.m in Sources */,
+				E1EBC86616DE4C1200FF8BD3 /* RGMTileCutter.m in Sources */,
+				E1EBC86916DE4CBC00FF8BD3 /* RGMImageTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
