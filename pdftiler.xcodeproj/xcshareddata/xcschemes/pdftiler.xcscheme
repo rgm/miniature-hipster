@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0460"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1B90CBE16DC2D7C000CFDB5"
+               BuildableName = "pdftiler"
+               BlueprintName = "pdftiler"
+               ReferencedContainer = "container:pdftiler.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "NO"
+      buildConfiguration = "Test">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1EBC85A16DC6DDC00FF8BD3"
+               BuildableName = "Lagrangian.octest"
+               BlueprintName = "pdftiler"
+               ReferencedContainer = "container:pdftiler.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E1B90CBE16DC2D7C000CFDB5"
+            BuildableName = "pdftiler"
+            BlueprintName = "pdftiler"
+            ReferencedContainer = "container:pdftiler.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-command $(BUILT_PRODUCTS_DIR)/pdftiler"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E1B90CBE16DC2D7C000CFDB5"
+            BuildableName = "pdftiler"
+            BlueprintName = "pdftiler"
+            ReferencedContainer = "container:pdftiler.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "--rows 12"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--cols 12"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--dpi 300"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;$(SRCROOT)/fixtures/SAU A102.pdf&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E1B90CBE16DC2D7C000CFDB5"
+            BuildableName = "pdftiler"
+            BlueprintName = "pdftiler"
+            ReferencedContainer = "container:pdftiler.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
