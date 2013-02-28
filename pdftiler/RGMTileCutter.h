@@ -13,7 +13,7 @@
 @property CGFloat dpi;
 @property int rows;
 @property int cols;
-@property NSImage *image;
+@property NSURL *url;
 
 - (NSArray *)tiles;
 

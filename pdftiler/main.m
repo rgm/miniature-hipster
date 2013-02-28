@@ -59,13 +59,11 @@ int main(int argc, const char * argv[])
   @autoreleasepool {
     
     NSLog(@"dpi %ld rows %ld cols %ld filename %s", dpi, rows, cols, filename);
-    NSURL *fileUrl = [NSURL URLWithString:[NSString stringWithCString:filename encoding:NSUTF8StringEncoding]];
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:fileUrl];
     RGMTileCutter *cutter = [RGMTileCutter new];
-    cutter.image = image;
     cutter.dpi = dpi;
     cutter.rows = rows;
     cutter.cols = cols;
+    cutter.url = [NSURL fileURLWithPath:[NSString stringWithCString:filename encoding:NSUTF8StringEncoding]];
     for (RGMImageTile *tile in [cutter tiles]) {
       [tile writeToDirectory:nil];
     }
